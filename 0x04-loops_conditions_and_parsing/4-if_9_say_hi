@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#prints Best school except for 9th time
+for ((i=0;i<10;i++))
+do
+	if [ $i == 8 ];then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+done

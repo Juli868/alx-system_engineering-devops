@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#prints Best school except fr the 4th time and eight time
+for (( i=0; i<10;i++))
+do
+	if [ $i == 3 ];then
+		echo "bad luck"
+	else 
+		if [ $i == 7 ];then
+			echo "good luck"
+		else
+			echo "Best School"
+		fi
+	fi
+done
