@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+: <<COMMENT prints Best School 10 times
+COMMENT
 number=0
 while [ $number -lt 10 ]
 do
