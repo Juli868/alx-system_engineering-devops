@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 #prints Best school except for 9th time
-for ((i=0;i<10;i++))
+i=0
+while [ $i -lt 10 ]
 do
 	if [ $i == 8 ];then
 		echo "Hi"
-	else
-		echo "Best School"
 	fi
+		echo "Best School"
+	i=$(( i+1))
 done
