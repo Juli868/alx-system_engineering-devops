@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#disabling the SIGTERM
+handle()
+{
+	echo "I am invincible!!!"
+}
+trap handle SIGTERM
+#displaying an endless loop
+i=0
+while [ $i -lt 5 ]
+do
+        echo "To infinity and beyond"
+        sleep 2
+done
+
