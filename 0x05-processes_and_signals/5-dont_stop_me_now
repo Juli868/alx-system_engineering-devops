@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#making a sript that kills another
+number=$(pgrep -f 4-to_infinity_and_beyond)
+if [ -n "$number" ];then
+	kill "$number"
+fi
