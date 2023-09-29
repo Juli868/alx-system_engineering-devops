@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#displaying an endless loop
+i=0
+while [ $i -lt 5 ]
+do
+	echo "To infinity and beyond"
+done
