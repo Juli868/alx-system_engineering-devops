@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#determing istening ports and their pid
+netstat -l --program
