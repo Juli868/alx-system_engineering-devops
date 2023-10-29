@@ -1,1 +1,2 @@
-
+Here we scale up the system and add 3 firewalls each on the server to help in the securing the network traffic such in order to minimise the risk of the network attacks (hackers).
+A certificate (SSL), which helps in enabling encryption to requests sent over to our network, and the responses given back. This helps by ensurng more security such that if there is an eavesdropper in between the captured data is unusable to the one got it.
