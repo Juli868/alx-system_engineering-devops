@@ -1,0 +1,15 @@
+The network consists of a router, one server that hosts our website (www.foobar.com).
+A server is a device or a computer program that provides functionality to other devices or programs usually reffered to as "Clients"
+Domain name: is a name by which clients or users will use to address to your server, in our case it is www.foobar.com
+The DNS
+The webserver is used to host a website and make it available to the clients such that it serves its purpose. Mostky it is contains the html, css and other front-end part of the system.
+The application server is used a backend of the website to mean the data handling part. This is the part of the system that holds the database and the modules that are used to retrieve that data.
+Database is one of the most crucial parts of the programs we see today, because it used to keep or save all data that we put on the intenet such as: usernames, passwords, posts, places, etc.
+Once a user wants to communicate with the website , it is the web-server that gets that request and work on providing the response to that with the help of application server if needed.
+Pros:
+* Low time consumig during installation, since you need only to work on a single server, if done then the task is over.
+* Low maintanance in case of disasters
+Cons:
+* System failure during maintanance, e.g: if you endup updating the codes for the web, then it will be temporarily down.
+* System overloads, the system is designed to serve less people, once the website is up and running most server resources are tasked to provide the loacal responce which will be overwhelming once the site gets many users.
+* System is vunleable to attacks and once they happen they can be catastrophic since all data and even the source code are on the same server.
