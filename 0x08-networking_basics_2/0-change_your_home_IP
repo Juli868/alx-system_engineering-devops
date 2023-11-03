@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #determining the local host and facebook 's address
 if [ -f "/.dockerenv" ]; then
-	printf "127.0.0.2\tlocalhost\n8.8.8.8   facebook.com\n8.8.8.8   www.facebook.com" | sudo tee -a /etc/hosts
+	sudo sed -i '/localhost/s/127.0.0.1/127.0.0.2/' /etc/hosts
+	printf "8.8.8.8   facebook.com\n8.8.8.8   www.facebook.com" | sudo tee -a /etc/hosts
 fi
