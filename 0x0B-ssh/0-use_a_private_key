@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Connecting to a serve with ubuntu as a user
+ssh ubuntu@54.160.86.207
