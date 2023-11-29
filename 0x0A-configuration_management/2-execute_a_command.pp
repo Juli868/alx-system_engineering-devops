@@ -1,6 +1,6 @@
 #killing a process
-file {'cwd':
+exec {'cwd':
   command     => 'pkill -f killmenow'
   refreshonlu => true
-  onlyif      => 'pgrep -f killmenow'
+  onlyif      => 'pgrep -f '
 }

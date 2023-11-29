@@ -1,5 +1,6 @@
 #!/usr/bin/env bash 
 #defining a file to connect without using password
 Host server01
+ HostName 54.160.86.207
  User ubuntu
  IdentityFile ~/.ssh/school

@@ -1,4 +1,4 @@
 #installing flask using puppet
-file {'cwd':
+exec { 'install flask':
   command => 'pip install flask==2.1.0'
 }
