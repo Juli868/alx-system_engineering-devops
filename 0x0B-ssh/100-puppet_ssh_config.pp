@@ -1,5 +1,5 @@
 #adding a user to my ssh configuration file
-file {'~/.ssh/config':
+file {'/etc/ssh/ssh_config':
   ensure  => present,
   content => "Host server 02\n  HostName 54.160.86.207\n  User ubuntu\n  IdentityFile ~/.ssh/school",
   mode    => '0644',
