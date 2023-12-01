@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 #installing and configuring nginx
-sudo apt update
-sudo apt install nginx
-nginx
-rm etc/nginx/nginx.conf
-sudo echo "<html><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html
-printf "https {\n\tserver {\n\tlisten 80\n\troot /var/www/html;\n\t}\n}\n events{}" >> nginx.conf
-ngnix -s reload
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo service nginx restart
+sudo echo "<html><body><h1>Hello World!</h1></body></html>" | sudo tee /var/www/html/index.html
+sudo service ngnix restart
