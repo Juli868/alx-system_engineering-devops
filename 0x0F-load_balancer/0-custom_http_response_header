@@ -6,7 +6,7 @@ header="server {\n\tadd_header X-Served-By $server;"
 
 sudo apt-get update -y
 sudo apt-get install nginx -y
-sudo echo "Hello World!" > /usr/share/nginx/html/index.html
+sudo echo "Hello World!" > /var/www/html/index.html
 mkdir -p /var/www/html
 sudo echo "Ceci n'est pas une page" > /var/www/html/custom_404.html
 sudo sed -i -E "s/^[^#]+location \/ \{/$not_found/" /etc/nginx/sites-available/default
