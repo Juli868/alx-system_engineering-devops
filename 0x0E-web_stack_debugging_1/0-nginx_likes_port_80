@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#setting a server to listen to port 80
 echo " server{
 	listen 80
 }" >> etc/nginx/sites-enabled/default
