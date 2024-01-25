@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#adding a redirection
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo service nginx restart
+sudo echo "server{
+	location /redirect_me{
+			root /var/www/html/redirect
+		}
+}" >> /etc/nginx/sites-enabled/default
+sudo echo "301 Moved Permanently" | sudo tee /var/www/html/redirect/redirect_me.html
+sudo service nginx restart
