@@ -1,5 +1,5 @@
 #!/bin/env bash
-
+#setting nginx to run on user nginx who has less priviledges
 sed -i 's/user  nginx;/user  nginx;/g' /etc/nginx/nginx.conf
 
 sed -i 's/listen       80;/listen       8080;/g' /etc/nginx/conf.d/default.conf
